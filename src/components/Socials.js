@@ -18,9 +18,9 @@ function Socials() {
         <i className="fa-brands fa-facebook"></i>
       </a>
 
-      <a href="https://github.com/hilusjr" target="_blank" rel="noreferrer">
+      {/* <a href="https://github.com/hilusjr" target="_blank" rel="noreferrer">
         <i className="fa-brands fa-github"></i>
-      </a>
+      </a> */}
       <a
         href="https://www.youtube.com/channel/UC2PIHyXB5T_gE8LUYC00BYg"
         target="_blank"
