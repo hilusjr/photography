@@ -1,38 +1,169 @@
-.App {
+nav {
+  z-index: 8000;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  transform: translateX(100%);
+  transition: all 0.25s ease-in-out;
+}
+
+nav[data-menu='true'] {
+  height: 100vh;
+  transform: translateX(0);
+}
+
+nav a {
+  all: unset;
+}
+
+.nav-btns {
+  display: flex;
+  flex-grow: 2;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-btns button {
+  all: unset;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.menu-btn {
+  z-index: 9999;
+  position: fixed;
+  top: 1rem;
+  right: 0;
+  font-size: 2rem;
+  padding: 1rem;
+  color: #fff;
+}
+
+header {
+  position: fixed;
+  display: none;
+  align-items: center;
+  font-family: 'Mr De Haviland', cursive;
+  height: 6rem;
+  width: 100%;
+  font-size: 3rem;
+  padding-left: 2rem;
+  -webkit-text-stroke: 1px #fff;
+  background-color: #000;
+  -webkit-box-shadow: 0px 13px 38px 18px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 13px 38px 18px rgba(0, 0, 0, 1);
+  box-shadow: 0px 13px 38px 18px rgba(0, 0, 0, 1);
+}
+
+header[data-scrolled='true'] {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  background-color: #000;
+}
+
+.logo span:first-of-type {
+  font-family: 'Mr De Haviland', cursive;
+  font-size: 6rem;
+  -webkit-text-stroke: 2px #fff;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo span:last-of-type {
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.socials {
+  display: flex;
+  gap: 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.socials i {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 0.5rem;
+  padding: 2rem 0 1rem 0;
+  font-size: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-width: 768px) {
+  nav {
+    position: absolute;
+    height: 40vh;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    transform: translateX(0);
+    transition: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  nav[data-scrolled='true'] {
+    position: fixed;
+    top: 0;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 0;
+    max-width: 100%;
+    height: 6rem;
+  }
+
+  nav a {
+    all: unset;
+  }
+
+  .nav-btns {
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 3rem;
+  }
+
+  .nav-btns button {
+    cursor: pointer;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  header[data-scrolled='true'] {
+    display: none;
+  }
+
+  .logo {
+    flex-grow: 1;
+    width: initial;
+    height: 100%;
+  }
+
+  .logo[data-scrolled='true'] span:first-of-type {
+    font-size: 4rem;
+    -webkit-text-stroke: 1px #fff;
+  }
+
+  .logo span:last-of-type {
+    font-size: 1.5rem;
   }
 }

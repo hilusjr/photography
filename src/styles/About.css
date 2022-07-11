@@ -1,0 +1,68 @@
+.about {
+  margin: 15vh auto 0 auto;
+}
+
+.profile-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  max-width: 10rem;
+  aspect-ratio: 1;
+  border-radius: 30rem;
+}
+
+.profile-picture img {
+  width: 100%;
+
+  border-radius: 10rem;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: space-around;
+}
+
+.nick {
+  font-family: 'Mr De Haviland', cursive;
+  font-size: 2rem;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.quote {
+  width: 80%;
+  margin: 3rem auto;
+  font-family: 'The Nautigal', cursive;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 80%;
+  margin: 0 auto 3rem auto;
+  text-align: justify;
+}
+
+@media only screen and (min-width: 768px) {
+  .about {
+    max-width: 80rem;
+    margin: 30vh auto 0 auto;
+  }
+}
