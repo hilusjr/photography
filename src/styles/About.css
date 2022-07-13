@@ -21,7 +21,6 @@
 
 .profile-picture img {
   width: 100%;
-
   border-radius: 10rem;
 }
 
@@ -62,7 +61,30 @@
 
 @media only screen and (min-width: 768px) {
   .about {
-    max-width: 80rem;
-    margin: 30vh auto 0 auto;
+    max-width: 50rem;
+    margin: 50vh auto 0 auto;
+  }
+
+  .profile-info {
+    gap: 5rem;
+  }
+
+  .nick {
+    font-size: 3rem;
+  }
+
+  .name {
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+
+  .quote {
+    margin: 5rem auto;
+    font-size: 3rem;
+  }
+
+  .description {
+    gap: 1rem;
+    font-size: 1.2rem;
   }
 }

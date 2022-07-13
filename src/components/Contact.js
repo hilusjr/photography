@@ -1,14 +1,11 @@
 import React from 'react'
-import Logo from './Logo'
 import '../styles/Contact.css'
-import useMobileInfo from '../hooks/useMobileInfo'
+import Header from './Header'
 
 function Contact() {
-  const isMobile = useMobileInfo
-
   return (
     <>
-      {isMobile && <Logo />}
+      <Header />
       <div className="contact">
         <form action="https://formsubmit.co/pietrzef@gmail.com" method="POST">
           <input

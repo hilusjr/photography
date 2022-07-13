@@ -4,7 +4,7 @@ const useMobileInfo = () => {
   const [isMobile, setMobile] = useState(true)
 
   useEffect(() => {
-    window.addEventListener('resize', () => {
+    window.addEventListener('load', () => {
       if (window.innerWidth < 768) setMobile(true)
       else setMobile(false)
     })

@@ -9,30 +9,24 @@ import img5 from '../images/5.jpg'
 import img6 from '../images/6.jpg'
 import img8 from '../images/8.jpg'
 import img9 from '../images/9.jpg'
-import Logo from './Logo'
 import '../styles/Gallery.css'
-import useMobileInfo from '../hooks/useMobileInfo'
+import Header from './Header'
 
 function Gallery() {
-  const isMobile = useMobileInfo()
   const [isGrid, setGrid] = useState(true)
 
   const changeLayout = () => {
     setGrid(!isGrid)
   }
 
-  const galleryStyle = {
-    display: isGrid ? 'grid' : 'flex',
-    maxWidth: !(isGrid && isMobile) ? '50rem' : '80rem',
-  }
-
   return (
     <>
-      {isMobile && <Logo />}
+      <Header />
       <button className="toggle-view-btn">
+        <span>view</span>
         <img src={isGrid ? Single : Grid} alt="" onClick={changeLayout} />
       </button>
-      <div className="gallery" style={galleryStyle}>
+      <div className="gallery" data-grid={isGrid}>
         <img src={img1} alt="" loading="lazy" />
         <img src={img2} alt="" loading="lazy" />
         <img src={img3} alt="" loading="lazy" />

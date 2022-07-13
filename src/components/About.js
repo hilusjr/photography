@@ -30,7 +30,8 @@ function About() {
             I am not educated when it comes to photography, but I enjoy looking
             for new opportunities to capture something that might tell a story
             or just show something from a rare perspective. I mostly photograph
-            cities and architecture and all my better shots end up on Instagram.
+            cities, their infrastructure and architecture, all my better shots
+            end up on Instagram.
           </span>
           <span>
             When it comes to gear I use for taking images, I don’t have a fancy
