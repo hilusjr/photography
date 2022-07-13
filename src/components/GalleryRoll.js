@@ -25,8 +25,8 @@ function GalleryRoll({ imageID, setImageID, setOpen, isOpen }) {
 
   return (
     <div className="gallery-roll" data-open={isOpen}>
-      <i className={`fa-solid fa-xmark close-roll`} onClick={closeRoll}></i>
       <div className="roll-image">
+        <i className={`fa-solid fa-xmark close-roll`} onClick={closeRoll}></i>
         <button onClick={displayPrevious}>
           <i className="fa-solid fa-angle-left"></i>
         </button>

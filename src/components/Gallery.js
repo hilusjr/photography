@@ -17,8 +17,8 @@ function Gallery() {
 
   const openImage = img => {
     const id = img.target.id
-    setOpen(true)
     setImageID(Number(id))
+    setOpen(true)
   }
 
   return (
