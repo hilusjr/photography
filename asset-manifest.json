@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/photography/static/css/main.f16bda9f.css",
-    "main.js": "/photography/static/js/main.20f947bf.js",
+    "main.css": "/photography/static/css/main.e5abc4ae.css",
+    "main.js": "/photography/static/js/main.f8788855.js",
     "static/js/787.c7d1202c.chunk.js": "/photography/static/js/787.c7d1202c.chunk.js",
-    "static/media/9.jpg": "/photography/static/media/9.5dc45d4e8409d0de400b.jpg",
-    "static/media/3.jpg": "/photography/static/media/3.87f5fa153449dc9ee2d7.jpg",
-    "static/media/1.jpg": "/photography/static/media/1.2d19acaba33bb12dbc18.jpg",
-    "static/media/2.jpg": "/photography/static/media/2.15a1c903cb3223094b36.jpg",
-    "static/media/4.jpg": "/photography/static/media/4.47beacd3ad1c77579e2c.jpg",
-    "static/media/8.jpg": "/photography/static/media/8.fe3f8abff2adc801919b.jpg",
-    "static/media/6.jpg": "/photography/static/media/6.35893b53625ee73d509b.jpg",
-    "static/media/5.jpg": "/photography/static/media/5.755a91c0c322bd92f4e6.jpg",
+    "static/media/1.webp": "/photography/static/media/1.484336e1b534d763e207.webp",
+    "static/media/4.webp": "/photography/static/media/4.dd15339f505d091a9d28.webp",
+    "static/media/8.webp": "/photography/static/media/8.3af0f5b9d5be8fb34da5.webp",
+    "static/media/6.webp": "/photography/static/media/6.9eb9ce3ec7486e9c2769.webp",
     "static/media/profile.jpg": "/photography/static/media/profile.d2077f20ff04a8e18792.jpg",
+    "static/media/5.webp": "/photography/static/media/5.b59358a9a0afd5fef39b.webp",
+    "static/media/9.webp": "/photography/static/media/9.a45baf4d9097c3710f33.webp",
+    "static/media/2.webp": "/photography/static/media/2.a8a29492dc537cce56c2.webp",
+    "static/media/3.webp": "/photography/static/media/3.58785ee6d2f7fb0b3950.webp",
     "index.html": "/photography/index.html",
     "static/media/grid.svg": "/photography/static/media/grid.48f7a87aaeb9f2cd707f635e45843a18.svg",
     "static/media/single.svg": "/photography/static/media/single.95cdc3ab232bf6971d3fb528a2f695da.svg",
-    "main.f16bda9f.css.map": "/photography/static/css/main.f16bda9f.css.map",
-    "main.20f947bf.js.map": "/photography/static/js/main.20f947bf.js.map",
+    "main.e5abc4ae.css.map": "/photography/static/css/main.e5abc4ae.css.map",
+    "main.f8788855.js.map": "/photography/static/js/main.f8788855.js.map",
     "787.c7d1202c.chunk.js.map": "/photography/static/js/787.c7d1202c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f16bda9f.css",
-    "static/js/main.20f947bf.js"
+    "static/css/main.e5abc4ae.css",
+    "static/js/main.f8788855.js"
   ]
 }
