@@ -1,6 +1,6 @@
 import React from 'react'
 import Socials from './Socials'
-import profilePic from '../images/profile.jpg'
+import profilePic from '../images/profile.webp'
 import '../styles/About.css'
 
 function About() {
