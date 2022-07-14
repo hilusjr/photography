@@ -4,6 +4,9 @@ import Logo from './Logo'
 function Navbar({ Link }) {
   const [isOpen, setOpen] = useState(false)
   const [isScrolled, setScrolled] = useState(false)
+  const isCollapsed =
+    window.location.href.includes('about') ||
+    window.location.href.includes('contact')
 
   const toggleMenu = () => {
     setOpen(!isOpen)
@@ -23,8 +26,11 @@ function Navbar({ Link }) {
         className={`fa-solid fa-${isOpen ? 'xmark' : 'bars'} menu-btn`}
         onClick={toggleMenu}
       ></i>
-      <nav data-menu={isOpen} data-collapsed={isScrolled}>
-        <Logo isOpen={isOpen} isScrolled={isScrolled} />
+      <nav
+        data-menu={isOpen}
+        data-collapsed={isCollapsed ? 'true' : isScrolled}
+      >
+        <Logo isOpen={isOpen} isScrolled={isCollapsed ? 'true' : isScrolled} />
         <div className="nav-btns">
           <Link to="/">
             <button className="photography-btn" onClick={toggleMenu}>

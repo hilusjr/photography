@@ -1,4 +1,5 @@
 header {
+  z-index: 6000;
   position: absolute;
   top: 0;
   height: 50vh;
@@ -14,6 +15,9 @@ header[data-scrolled='true'] {
   height: 6rem;
   justify-content: left;
   padding-left: 2rem;
+  -webkit-box-shadow: 0px 13px 38px 18px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 13px 38px 18px rgba(0, 0, 0, 1);
+  box-shadow: 0px 13px 38px 18px rgba(0, 0, 0, 1);
 }
 
 header[data-scrolled='true'] > div > span:first-of-type {
@@ -27,8 +31,7 @@ header[data-scrolled='true'] > div > span:last-of-type {
 
 .toggle-view-btn {
   all: unset;
-  position: sticky;
-  top: 6rem;
+  position: relative;
   height: 3rem;
   background-color: #000;
   width: 100%;
@@ -37,11 +40,8 @@ header[data-scrolled='true'] > div > span:last-of-type {
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  margin: 42vh auto 0 auto;
+  margin: 50vh auto 0 auto;
   box-sizing: border-box;
-  -webkit-box-shadow: 0px 13px 38px 18px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 0px 13px 38px 18px rgba(0, 0, 0, 1);
-  box-shadow: 0px 13px 38px 18px rgba(0, 0, 0, 1);
   text-transform: uppercase;
 }
 
@@ -133,6 +133,7 @@ header[data-scrolled='true'] > div > span:last-of-type {
 @media only screen and (min-width: 768px) {
   .toggle-view-btn {
     max-width: 80rem;
+    margin: 42vh auto 0 auto;
   }
 
   .toggle-view-btn img {
@@ -142,7 +143,8 @@ header[data-scrolled='true'] > div > span:last-of-type {
   .gallery {
     max-width: 80rem;
     grid-template-columns: repeat(3, 1fr);
-    margin: 2rem auto;
+    gap: 1rem;
+    margin: 1rem auto;
   }
 
   .gallery[data-grid='false'] {

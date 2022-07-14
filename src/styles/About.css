@@ -62,7 +62,7 @@
 @media only screen and (min-width: 768px) {
   .about {
     max-width: 50rem;
-    margin: 50vh auto 0 auto;
+    margin: 10rem auto 0 auto;
   }
 
   .profile-info {
