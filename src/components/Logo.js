@@ -1,10 +1,12 @@
-function Logo({ isScrolled }) {
+function Logo({ isScrolled, Link }) {
   return (
     <>
-      <div className="logo" data-scrolled={isScrolled}>
-        <span>hilusjr</span>
-        <span>photography</span>
-      </div>
+      <a href={'https://hilusjr.github.io/photography'}>
+        <div className="logo" data-scrolled={isScrolled}>
+          <span>hilusjr</span>
+          <span>photography</span>
+        </div>
+      </a>
     </>
   )
 }
