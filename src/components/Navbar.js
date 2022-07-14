@@ -30,7 +30,7 @@ function Navbar({ Link }) {
         data-menu={isOpen}
         data-collapsed={isCollapsed ? 'true' : isScrolled}
       >
-        <Logo isScrolled={isCollapsed ? 'true' : isScrolled}/>
+        <Logo isOpen={isOpen} isScrolled={isCollapsed ? 'true' : isScrolled} />
         <div className="nav-btns">
           <Link to="/">
             <button className="photography-btn" onClick={toggleMenu}>
