@@ -6,7 +6,8 @@ function Navbar({ Link }) {
   const [isScrolled, setScrolled] = useState(false)
   const isCollapsed =
     window.location.href.includes('about') ||
-    window.location.href.includes('contact')
+    window.location.href.includes('contact') ||
+    window.location.href.includes('thank-you')
 
   const toggleMenu = () => {
     setOpen(!isOpen)

@@ -19,7 +19,7 @@ function Contact() {
           <input
             type="hidden"
             name="_next"
-            value="https://hilusjr.github.io/photography"
+            value="https://hilusjr.github.io/photography/#/thank-you"
           ></input>
           <input type="hidden" name="_captcha" value="false"></input>
           <span>Name</span>
@@ -28,12 +28,7 @@ function Contact() {
           <input type="email" name="email" required />
           <span>Message</span>
           <input type="text" name="message" required />
-          <button
-            type="submit"
-            onClick={() => alert('Your message has been sent')}
-          >
-            Send
-          </button>
+          <button type="submit">Send</button>
         </form>
       </div>
     </>

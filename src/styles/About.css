@@ -63,6 +63,7 @@
   .about {
     max-width: 50rem;
     margin: 10rem auto 0 auto;
+    min-height: calc(92vh - 10rem);
   }
 
   .profile-info {

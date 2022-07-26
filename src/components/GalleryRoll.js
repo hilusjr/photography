@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function GalleryRoll({ imageID, setImageID, setOpen, isOpen }) {
+  const [isLoaded, setLoaded] = useState(false)
+
+  const placeHolder = require(`../images/thumbnails/${imageID}.webp`)
+
   const image = () => {
     try {
       return require(`../images/${imageID}.jpg`)
@@ -23,6 +27,7 @@ function GalleryRoll({ imageID, setImageID, setOpen, isOpen }) {
     setOpen(false)
   }
 
+  console.log(isLoaded)
   return (
     <div className="gallery-roll" data-open={isOpen}>
       <div className="roll-image">
@@ -30,7 +35,10 @@ function GalleryRoll({ imageID, setImageID, setOpen, isOpen }) {
         <button onClick={displayPrevious}>
           <i className="fa-solid fa-angle-left"></i>
         </button>
-        <img src={image()} />
+        <img
+          src={isLoaded ? image() : placeHolder}
+          onLoad={() => setLoaded(true)}
+        />
         <button onClick={displayNext}>
           <i className="fa-solid fa-angle-right"></i>
         </button>

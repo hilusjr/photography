@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals'
 import About from './components/About'
 import Contact from './components/Contact'
 import Gallery from './components/Gallery'
+import Thanks from './components/Thanks'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -16,6 +17,7 @@ root.render(
         <Route index element={<Gallery />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="thank-you" element={<Thanks />} />
       </Route>
     </Routes>
   </HashRouter>
